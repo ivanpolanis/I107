@@ -9,7 +9,7 @@ for line in $(cat /etc/passwd); do
   home=$(echo "$line" | cut -d ":" -f 6)
   shell=$(echo "$line" | cut -d ":" -f 7)
 
-  if [ $(sudo find $home -type d -name mailDir | wc -l) -eq 1 ] && [ "$shell" == "/bin/zsh" ]; then
+  if [ $(sudo find $home -type d -name mailDir | wc -l) -ge 1 ] && [ "$shell" == "/bin/zsh" ]; then
     echo "$user" >> /var/listado.txt
   fi
 done
