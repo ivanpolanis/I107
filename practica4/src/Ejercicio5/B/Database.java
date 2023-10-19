@@ -1,9 +1,8 @@
 package Ejercicio5.B;
 
-public class Database {
-}
 import java.util.ArrayList;
-        import java.util.Iterator;
+import java.util.Iterator;
+
 /*****************************************
  * The database class provides a facility to store CD and video
  * objects. A list of all textbooks, CDs and videos can be printed to the terminal.

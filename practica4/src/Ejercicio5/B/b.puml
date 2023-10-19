@@ -1,0 +1,13 @@
+@startuml
+class Car {
+  + name : String
+  +
+- parts : Part[] -- 0..*
+}
+
+class Part {
+  + name : String
+}
+
+Car --|> Part : -contains
+@enduml
